@@ -77,7 +77,6 @@ def reg():
         password = request.form['password']
         
         #Tugas #3. Buat agar data pengguna direkam ke dalam database
-        # Tugas #3. Tulis kode yang akan mencatat pengguna ke dalam DB
         user = User(login=login, password=password)
         db.session.add(user)
         db.session.commit()
@@ -128,6 +127,3 @@ def form_create():
 
 if __name__ == "__main__":
     app.run(debug=True)
-#if __name__ == "__main__":
- #   from waitress import serve
-  #  serve(app, host="0.0.0.0", port=8080)
